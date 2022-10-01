@@ -5,8 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BasicWPFCalculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Basic Calculator" Height="400" Width="200">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel>
+            <TextBox x:Name="TxtNum1" />
+            <Button Content="Add" x:Name="BtnAdd" Click="BtnAdd_OnClick"/>
+        </StackPanel>
+        
+        <StackPanel Grid.Column="1">
+            <TextBox x:Name="TxtNum2" />
+        </StackPanel>
+        
+        <Label Grid.Row="2" Content="0" x:Name="LblResult" />
+        
 
     </Grid>
 </Window>

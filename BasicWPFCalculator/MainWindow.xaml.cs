@@ -62,7 +62,9 @@ namespace BasicWPFCalculator
 
         private void BtnMultiply_OnClick(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            (bool, int, int) result = CheckNumberValidity();
+            // Both numbers are valid
+            LblResult.Content = result.Item2 * result.Item3;
         }
     }
 }

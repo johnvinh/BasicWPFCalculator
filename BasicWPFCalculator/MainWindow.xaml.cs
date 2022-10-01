@@ -69,7 +69,8 @@ namespace BasicWPFCalculator
 
         private void BtnSubtract_OnClick(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            (bool, int, int) result = CheckNumberValidity();
+            LblResult.Content = result.Item2 - result.Item3;
         }
     }
 }

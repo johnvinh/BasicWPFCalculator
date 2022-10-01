@@ -66,5 +66,10 @@ namespace BasicWPFCalculator
             // Both numbers are valid
             LblResult.Content = result.Item2 * result.Item3;
         }
+
+        private void BtnSubtract_OnClick(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

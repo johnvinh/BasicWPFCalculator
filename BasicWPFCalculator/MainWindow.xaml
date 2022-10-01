@@ -21,6 +21,7 @@
         <StackPanel>
             <TextBox x:Name="TxtNum1" />
             <Button Content="Add" x:Name="BtnAdd" Click="BtnAdd_OnClick"/>
+            <Button Content="Subtract" x:Name="BtnSubtract" Click="BtnSubtract_OnClick"/>
         </StackPanel>
         
         <StackPanel Grid.Column="1">

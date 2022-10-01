@@ -25,6 +25,7 @@
         
         <StackPanel Grid.Column="1">
             <TextBox x:Name="TxtNum2" />
+            <Button Content="Multiply" x:Name="BtnMultiply" Click="BtnMultiply_OnClick" />
         </StackPanel>
         
         <Label Grid.Row="2" Content="0" x:Name="LblResult" />

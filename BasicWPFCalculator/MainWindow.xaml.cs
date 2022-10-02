@@ -25,6 +25,13 @@ namespace BasicWPFCalculator
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Determine whether the two numbers are valid.
+        /// </summary>
+        /// <returns>
+        /// A tuple containing a boolean
+        /// determining the numbers are valid, the first number, and the second number.
+        /// </returns>
         private (bool, int, int) CheckNumberValidity()
         {
             int num1 = 0;

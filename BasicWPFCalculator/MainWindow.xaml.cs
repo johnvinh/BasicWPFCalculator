@@ -72,5 +72,11 @@ namespace BasicWPFCalculator
             (bool, int, int) result = CheckNumberValidity();
             LblResult.Content = result.Item2 - result.Item3;
         }
+
+        private void BtnDivide_OnClick(object sender, RoutedEventArgs e)
+        {
+            (bool, int, int) result = CheckNumberValidity();
+            LblResult.Content = result.Item2 / result.Item3;
+        }
     }
 }

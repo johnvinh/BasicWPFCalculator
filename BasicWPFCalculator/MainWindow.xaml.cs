@@ -83,7 +83,7 @@ namespace BasicWPFCalculator
         private void BtnDivide_OnClick(object sender, RoutedEventArgs e)
         {
             (bool, int, int) result = CheckNumberValidity();
-            LblResult.Content = result.Item2 / result.Item3;
+            LblResult.Content = (double) result.Item2 / result.Item3;
         }
     }
 }

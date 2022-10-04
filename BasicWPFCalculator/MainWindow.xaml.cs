@@ -85,5 +85,10 @@ namespace BasicWPFCalculator
             (bool, int, int) result = CheckNumberValidity();
             LblResult.Content = (double) result.Item2 / result.Item3;
         }
+
+        private void BtnPower_OnClick(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

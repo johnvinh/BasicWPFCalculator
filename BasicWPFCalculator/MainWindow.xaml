@@ -28,6 +28,7 @@
             <TextBox x:Name="TxtNum2" />
             <Button Content="Multiply" x:Name="BtnMultiply" Click="BtnMultiply_OnClick" />
             <Button Content="Divide" x:Name="BtnDivide" Click="BtnDivide_OnClick" />
+            <Button Content="Power" x:Name="BtnPower" Click="BtnPower_OnClick" />
         </StackPanel>
         
         <Label Grid.Row="2" Content="0" x:Name="LblResult" />

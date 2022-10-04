@@ -88,7 +88,8 @@ namespace BasicWPFCalculator
 
         private void BtnPower_OnClick(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            (bool, int, int) result = CheckNumberValidity();
+            LblResult.Content = Math.Pow(result.Item2, result.Item3);
         }
     }
 }
